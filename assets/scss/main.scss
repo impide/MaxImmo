@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@400;600;700;800&family=Lato:wght@700&family=Nunito+Sans:wght@400;600;700&display=swap');
+
+
+$base-color: #282F65;
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "nunito sans";
+}
+
+nav {
+    height: 80px;
+    width: 1237px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    img {
+        position: relative;
+        bottom: 5px;
+        right: 10px;
+    }
+
+    .logo {
+        font-size: 27px;
+        font-weight: 700;
+        font-family: 'lato';
+        color: #282F65;
+    }
+
+    ul {
+        margin-right: 20px;
+
+        li {
+            display: inline-block;
+            margin: 0 5px;
+
+            a {
+                font-size: 1rem;
+                padding: 7px 13px;
+                text-decoration: none;
+                font-weight: 600;
+                color: #AEAEAE;
+                list-style: none;
+                position: relative;
+
+                &.active {
+                    color: #282F65;
+                    bottom: 3px;
+
+                    &::after {
+                        background-color: $base-color;
+                        content: "";
+                        width: 15px;
+                        height: 5px;
+                        left: 40%;
+                        bottom: -10px;
+                        transition: width 0.35s ease 0s;
+                        position: absolute;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn {
+        margin-left: auto;
+    }
+}
+
+a:hover {
+    color: #AEAEAE;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: $base-color;
+    cursor: pointer;
+    display: none;
+
+    i {
+
+        float: right;
+    }
+}
+
+#check {
+    display: none;
+}
+
+// jumbotron
+.jumbotron {
+    background-image: url(/assets/image/pexels.png);
+    border-radius: 10px 10px 0 0;
+
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+        font-weight: 700;
+        color: #fff;
+        font-family: 'khula';
+    }
+
+    p {
+        font-weight: 400;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    // avis sur le jumbotron
+    .avatar1 {
+        position: relative;
+        bottom: 20px;
+        left: 220px;
+    }
+
+    .chat {
+        height: 72px;
+        width: 299px;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 4px;
+        backdrop-filter: blur(12px);
+        position: relative;
+        left: 80px;
+
+        p {
+            position: relative;
+            left: 15px;
+            bottom: 15px;
+            font-size: 14px;
+        }
+
+        .rating {
+            width: 102px;
+            height: 28px;
+            border-radius: 4px;
+            background: #3E3E3E;
+            position: relative;
+            top: -15px;
+            left: 15px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .avatar2 {
+            position: relative;
+            bottom: 40px;
+            left: 270px;
+        }
+    }
+
+    .avatar3 {
+        position: relative;
+        bottom: 40px;
+    }
+
+    .chat-video {
+        width: 252px;
+        height: 80px;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(12px);
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        bottom: 20px;
+        left: 35px;
+
+        .avatar4 {
+            height: 44px;
+            width: 44px;
+            margin-left: 20px;
+        }
+
+        p {
+            margin-left: 10px;
+            margin-top: 8px;
+        }
+
+        .play-button {
+            width: 33.85px;
+            height: 33.85px;
+            position: relative;
+            left: 15px;
+        }
+
+    }
+
+    .avatar5 {
+        position: relative;
+        left: 300px;
+        bottom: 30px;
+    }
+
+    .rating1 {
+        width: 147px;
+        height: 32px;
+        padding: 0 25px 0 25px;
+        border-radius: 4px;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(12px);
+        position: relative;
+        bottom: 50px;
+        left: 110px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .avatar6 {
+        position: relative;
+        bottom: 65px;
+        left: 80px;
+    }
+}
+
+
+.bsremove {
+    padding: 0 !important;
+    width: 1237px;
+}
+
+// partenaires
+.nos-partenaires {
+    margin: auto;
+    margin-top: 150px;
+    width: 1237px;
+
+    .h2 {
+
+
+        h2 {
+            font-weight: 700;
+            font-family: 'khula';
+            font-size: 36px;
+        }
+
+        .surlignement {
+            position: relative;
+            top: -35px;
+            left: 70px;
+            width: 220px;
+            height: 16px;
+            background: #79DCF2;
+            border-radius: 4px;
+            mix-blend-mode: darken;
+
+        }
+
+
+    }
+}
+
+.section {
+    .partenaire {
+        img {
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .salon {
+            position: relative;
+            top: 73.94px;
+            width: 387px;
+            height: 330px;
+        }
+
+        .perle {
+            width: 355.35px;
+            height: 73.94px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(16px);
+            border-radius: 0px 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .hashtag {
+                font-size: 3rem;
+                position: relative;
+                bottom: 15px;
+                right: 10px;
+            }
+
+            p {
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.argument {
+    margin-bottom: 4.7em;
+
+    p {
+        font-size: 1rem
+    }
+
+    h2 {
+        font-family: 'khula';
+        font-weight: 700;
+        font-size: 2rem;
+    }
+}
+
+.story {
+    p {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #79DCF2;
+        margin: 0;
+    }
+
+    img {
+        margin-left: 20px;
+    }
+}
+
+.box {
+    height: 60px;
+    width: 60px;
+    background-color: #C0DFF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.fa-solid {
+    font-size: 30px;
+    color: $base-color ;
+}
+
+.icone {
+    h4 {
+        color: $base-color ;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    p {
+        color: #AEAEAE;
+        font-size: 14px;
+    }
+
+
+}
+
+
+.service {
+    margin: 0 !important;
+    background-color: #EDEDED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px !important;
+    padding-bottom: 80px;
+
+    h2 {
+        font-size: 3rem;
+        font-family: 'khula';
+        font-weight: 700;
+        text-align: center;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 100px;
+
+        .btn {
+            display: none;
+        }
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        background: white;
+        width: 100%;
+        top: 79px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 40px 0;
+        line-height: 10px;
+    }
+
+    a:hover,
+    .active {
+        background: none;
+        color: $base-color;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        display: block;
+    }
+
+    .bsremove {
+        width: 100%;
+    }
+
+    .jumbotron {
+        height: 100vh;
+    }
+
+    .nos-partenaires {
+
+        width: 90%;
+        margin: auto;
+        margin-top: 150px;
+    }
+    .section {
+        width: 90%;
+        .partenaire {
+            img {
+                border-radius: 10px;
+                width: 100%;
+            }
+    
+            .salon {
+width: 100%;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 700px) {
+    .img-cut {
+        display: none;
+    }
+    .section {
+        .partenaire {
+            img {
+                border-radius: 10px;
+                width: 100%;
+            }
+    
+            .salon {
+width: 100%;
+            }
+        }
+    }
+}
